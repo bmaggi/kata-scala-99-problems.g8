@@ -1,0 +1,20 @@
+Kata
+
+The main goal is to make all tests pass. 
+
+How to solve a problem
+ - open the dedicated file 
+ - run tests (failure is expected)
+ - implement the method 
+ - run tests whith sucess (:))
+ 
+ 
+
+ # How to run tests 
+  - using your favorite IDE
+  - using sbt ``` sbt test ```
+
+
+
+
+https://en.wikipedia.org/wiki/Kata_(programming)
