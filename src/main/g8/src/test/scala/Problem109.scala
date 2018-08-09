@@ -10,12 +10,12 @@ Example:
 ?- pack([a,a,a,a,b,c,c,a,a,d,e,e,e,e],X).
 X = [[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
   */
-  def pack[T](list: List[T]): List[T] = {
+  def listPack[T](list: List[T]): List[T] = {
     throw new NotImplementedError()
   }
 
   it("should pack the list ") {
-    val pack = pack(List('a','a','a','a','b','c','c','a','a','d','e','e','e','e'))
+    val pack = listPack(List('a','a','a','a','b','c','c','a','a','d','e','e','e','e'))
     pack should be(List(List('a','a','a','a'),List('b'),List('c','c'),List('a','a'),List('d'),
       List('e','e','e','e')))
   }

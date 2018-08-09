@@ -16,8 +16,8 @@ X = [a, b, c, d, e]
   }
 
   it("should flatten the list ") {
-    val last = flatten(List('a', List('b', List('c', 'd'), 'e')))
-    last should be(List('a', 'b', 'c', 'd', 'e'))
+    val flat = flatten(List('a', List('b', List('c', 'd'), 'e')))
+    flat should be(List('a', 'b', 'c', 'd', 'e'))
   }
 
 }
