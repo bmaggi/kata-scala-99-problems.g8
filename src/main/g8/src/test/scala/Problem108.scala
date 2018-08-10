@@ -16,9 +16,8 @@ X = [a,b,c,a,d,e]
     throw new NotImplementedError()
   }
 
-  it("should compress the list ") {
-    val last = compress(List('a','a','a','a','b','c','c','a','a','d','e','e','e','e'))
-    last should be(List('a', 'b', 'c', 'a', 'd', 'e'))
+  it("should compress the list") {
+    compress(List('a','a','a','a','b','c','c','a','a','d','e','e','e','e')) should be(List('a', 'b', 'c', 'a', 'd', 'e'))
   }
 
 

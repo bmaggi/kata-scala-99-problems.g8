@@ -15,9 +15,8 @@ X = [a, b, c, d, e]
     throw new NotImplementedError()
   }
 
-  it("should flatten the list ") {
-    val flat = flatten(List('a', List('b', List('c', 'd'), 'e')))
-    flat should be(List('a', 'b', 'c', 'd', 'e'))
+  it("should flatten the example list") {
+    flatten(List('a', List('b', List('c', 'd'), 'e'))) should be(List.range('a', 'f'))
   }
 
 }

@@ -1,19 +1,20 @@
 Welcome to the kata-scala-99-problems
 
 Your goal is to make all tests pass. 
+Original problems come from 
+https://sites.google.com/site/prologsite/prolog-problems/
+
 
 /!\: 
  - this project doesn't contains the solutions
  - many solutions exist (using high or low level API)
  
  
-
- 
 # How to solve a problem
  - open the dedicated file 
  - run tests (failure is expected)
  - implement the method 
- - run tests whith sucess (:))
+ - run tests with success (:))
  
  
 # How to run tests 
