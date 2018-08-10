@@ -12,10 +12,8 @@ class Problem103 extends FunSpec with Matchers {
 
   describe("Example: element_at(X,[a,b,c,d,e],3) X = c") {
     it("should find the correct element") {
-      val el = kthElement(List('a', 'b', 'c', 'd', 'e'), 3)
-      el should be('c')
+      kthElement(List.range('a', 'f'), 3) should be('c')
     }
-
   }
 
 }

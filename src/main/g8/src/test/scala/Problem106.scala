@@ -10,20 +10,18 @@ class Problem106 extends FunSpec with Matchers {
     throw new NotImplementedError()
   }
 
+  it("should consider xamax as a palindrome") {
+    val last = isPalindrome(List('x', 'a', 'm', 'a', 'x'))
+    last should be(true)
+  }
 
-    it("should consider xamax as a palindrom") {
-      val last = isPalindrome(List('x','a','m','a','x'))
-      last should be(true)
-    }
+  it("should'nt consider hello as a palindrome") {
+    val last = isPalindrome(List('h', 'e', 'l', 'l', 'o'))
+    last should be(false)
+  }
 
-    it("should'nt consider hello as a palindrom") {
-      val last = isPalindrome(List('h','e','l','l','o'))
-      last should be(false)
-    }
-
-    it("should consider one element list as palindrom") {
-      val last = isPalindrome(List("a"))
-      last should be (true)
-    }
-
+  it("should consider one element list as palindrome") {
+    val last = isPalindrome(List("a"))
+    last should be(true)
+  }
 }
