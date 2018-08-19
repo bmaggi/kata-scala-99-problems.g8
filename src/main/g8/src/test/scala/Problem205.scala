@@ -15,8 +15,12 @@ class Problem205 extends FunSpec with Matchers {
   }
 
   it("should determine Goldbach of 28") {
-    val golbach = goldbach(28)
-    // TODO check sum and prime for each element of pair
+    val golbach28 = goldbach(28)
+    (golbach28._1 + golbach28._2) should be (28)
+    isPrime(golbach28._1) should be (true)
+    isPrime(golbach28._2) should be (true)
   }
+
+  def isPrime(n: Int): Boolean = ! ((2 until n-1) exists (n % _ == 0))
 
 }

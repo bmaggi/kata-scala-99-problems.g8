@@ -14,4 +14,7 @@ Given a range of integers by its lower and upper limit, construct a list of all 
     primeList(4,6) should be (List(5))
   }
 
+  it("should determine 5 and 7 as prime between 4 and 8") {
+    primeList(4,6) should be (List(5,7))
+  }    
 }
