@@ -14,7 +14,7 @@ script:
   ## This runs the template with the default parameters and compile code within the templated app.
   ## (tests are expecting to fail the kata objective is to solve them)
   - sbt -Dfile.encoding=UTF8 -J-XX:ReservedCodeCacheSize=256M compile
-
+  - sbt g8Test
   # Tricks to avoid unnecessary cache updates
   - find $HOME/.sbt -name "*.lock" | xargs rm
   - find $HOME/.ivy2 -name "ivydata-*.properties" | xargs rm
